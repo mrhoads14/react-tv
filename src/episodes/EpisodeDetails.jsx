@@ -2,7 +2,7 @@ import "./episodes.css";
 
 /** Details about the selected episode */
 export default function EpisodeDetails({ episode }) {
-  if (!episode) {
+  if (!episode.number) {
     return (
       <section className="episode-details">
         <h2>Episode Details</h2>
